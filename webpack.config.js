@@ -1,6 +1,7 @@
 /* eslint-env node */
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const webpack = require('webpack')
 
 const mode = process.env.NODE_ENV || 'development'
 const prod = mode === 'production'
@@ -48,6 +49,14 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '[name].css',
     }),
+    new webpack.HotModuleReplacementPlugin(),
   ],
   devtool: prod ? false : 'source-map',
+
+  devServer: {
+    hot: true,
+  },
+  optimization: {
+    minimize: false,
+  },
 }
