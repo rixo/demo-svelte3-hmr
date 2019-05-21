@@ -1,64 +1,18 @@
-# svelte app
+# Svelte 3 HMR experiment
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template-webpack.
+This is a fork of Svelte's [template-webpack](https://github.com/sveltejs/template-webpack.) intended to play & experiment with HMR before it is officially supported.
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
+It relies on forked versions of [svelte-loader](https://github.com/sveltejs/svelte-loader) ([fork](https://github.com/rixo/svelte-loader/tree/hmr)), and [svelte-dev-helper](https://github.com/ekhaled/svelte-dev-helper) ([fork](https://github.com/rixo/svelte-dev-helper/tree/hmr)).
 
-```bash
-npx degit sveltejs/template-webpack svelte-app
-cd svelte-app
-```
-
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
-
+**Disclaimer** I am not affiliated with `svelte-loader` team, so this may be completely different to what will eventually be implemented officially.
 
 ## Get started
 
-Install the dependencies...
-
 ```bash
-cd svelte-app
+npx degit rixo/demo-svelte3-hmr svelte-hmr
+cd svelte-hmr
+
 npm install
-```
 
-...then start webpack:
-
-```bash
 npm run dev
-```
-
-Navigate to [localhost:8080](http://localhost:8080). You should see your app running. Edit a component file in `src`, save it, and the page should reload with your changes.
-
-
-## Deploying to the web
-
-### With [now](https://zeit.co/now)
-
-Install `now` if you haven't already:
-
-```bash
-npm install -g now
-```
-
-Then, from within your project folder:
-
-```bash
-now
-```
-
-As an alternative, use the [Now desktop client](https://zeit.co/download) and simply drag the unzipped project folder to the taskbar icon.
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public
 ```
