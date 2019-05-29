@@ -5,6 +5,7 @@ const webpack = require('webpack')
 
 const mode = process.env.NODE_ENV || 'development'
 const prod = mode === 'production'
+const dev = !prod
 
 module.exports = {
   entry: {
@@ -28,6 +29,12 @@ module.exports = {
           options: {
             emitCss: true,
             hotReload: true,
+            hotOptions: {
+              // will display compile error in the client, avoiding page
+              // reload on error
+              optimistic: true,
+            },
+            dev,
           },
         },
       },
