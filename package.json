@@ -2,7 +2,7 @@
   "name": "svelte-app",
   "version": "1.0.0",
   "devDependencies": {
-    "@rixo/eslint-config-svelte-native": "^0.6.0",
+    "@rixo/eslint-config-svelte-native": "^0.7.0-alpha.7",
     "cross-env": "^5.2.0",
     "css-loader": "^2.1.1",
     "mini-css-extract-plugin": "^0.6.0",
