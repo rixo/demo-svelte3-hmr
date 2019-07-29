@@ -1,5 +1,6 @@
 /* eslint-env node */
 
+const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const webpack = require('webpack')
 
@@ -12,6 +13,9 @@ module.exports = {
     bundle: ['./src/main.js'],
   },
   resolve: {
+    alias: {
+			svelte: path.resolve('node_modules', 'svelte'),
+    },
     extensions: ['.mjs', '.js', '.svelte'],
   },
   output: {
