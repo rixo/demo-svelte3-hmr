@@ -51,7 +51,8 @@ module.exports = {
         use: {
           loader: 'svelte-loader',
           options: {
-            emitCss: true,
+            // waiting for: https://github.com/rixo/svelte-loader/issues/2
+            emitCss: false,
             hotReload: true,
             hotOptions: {
               // will display compile error in the client, avoiding page
