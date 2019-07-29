@@ -33,7 +33,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-			svelte: path.resolve('node_modules', 'svelte'),
+      svelte: path.resolve(__dirname, 'node_modules', 'svelte'),
     },
     extensions: ['.mjs', '.js', '.svelte'],
   },
