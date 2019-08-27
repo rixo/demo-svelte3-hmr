@@ -1,5 +1,5 @@
 extends:
-  - '@rixo/svelte-native'
+  - '@rixo/svelte'
 
 settings:
   import/resolver: 'webpack'
