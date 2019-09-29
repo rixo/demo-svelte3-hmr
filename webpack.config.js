@@ -54,6 +54,9 @@ module.exports = {
             emitCss: false,
             hotReload: true,
             hotOptions: {
+              // whether to preserve local state (i.e. any `let` variable) or
+              // only public props (i.e. `export let ...`)
+              noPreserveState: false,
               // will display compile error in the client, avoiding page
               // reload on error
               optimistic: true,
