@@ -1,5 +1,5 @@
 {
-  "name": "svelte-app",
+  "name": "svelte-template-webpack-hot",
   "version": "1.0.0",
   "devDependencies": {
     "@rixo/eslint-config-svelte": "^0.7.0-alpha.8",
