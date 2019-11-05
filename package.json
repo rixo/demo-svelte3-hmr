@@ -17,6 +17,7 @@
     "serve": "^11.0.0"
   },
   "scripts": {
+    "postinstall": "touch public/bundle.css; touch public/bundle.js",
     "build": "cross-env NODE_ENV=production webpack",
     "dev": "webpack-dev-server"
   }
